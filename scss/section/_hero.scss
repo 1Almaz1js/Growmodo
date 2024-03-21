@@ -1,0 +1,28 @@
+.hero {
+    @include dis();
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        max-width: 895px;
+        @include arial(63px, 400, 77px);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: $text;
+    }
+
+    &__sub-title {
+        max-width: 713px;
+        @include space(20px, 400, 37px);
+        color: #5E5E5E;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+}

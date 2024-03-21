@@ -1,0 +1,980 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ul,
+ol,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 35px;
+  padding: 4px;
+  gap: 45px;
+  background: #fff;
+  box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.07);
+}
+.header__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 35px;
+  gap: 54px;
+}
+.header__link {
+  display: flex;
+  align-items: center;
+  font-family: Space Grotesk;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: #121212;
+  gap: 9px;
+}
+.header__bot {
+  border-radius: 5px;
+  border: 2px solid #121212;
+  background: #121212;
+  padding: 11px 29px 13px 29px;
+  margin: 23px;
+  display: flex;
+  align-items: center;
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__title {
+  max-width: 895px;
+  font-family: Arial;
+  font-size: 63px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 77px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #121212;
+}
+.hero__sub-title {
+  max-width: 713px;
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
+  color: #5E5E5E;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cust {
+  background: #F7F9FF;
+  padding-top: 35px;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.cust__top {
+  display: flex;
+  align-items: center;
+  gap: 133px;
+  margin-left: 94px;
+}
+.cust__title {
+  font-family: Arial;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  color: #121212;
+}
+.cust__link {
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #121212;
+}
+.cust__text {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #5C6185;
+  margin-top: 18px;
+  padding-left: 94px;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+}
+.cust__banner {
+  display: flex;
+  background: #000;
+  padding: 26px;
+  margin-top: 16px;
+  justify-content: center;
+  gap: 9px;
+}
+.cust__text-sub {
+  font-family: lato;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #F7F9FF;
+}
+.cust__bot {
+  margin: 0 26px;
+  padding: 0 44px;
+  border-radius: 4px;
+  background: #CEFE2E;
+}
+.cust__about {
+  display: flex;
+  gap: 133px;
+  justify-content: space-evenly;
+  margin-top: 35px;
+}
+.cust__text {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #5C6185;
+  row-gap: 8px;
+}
+.cust__link {
+  font-family: Arial;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+}
+.cust__sub-wrap {
+  font-family: Space Grotesk;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+
+.card {
+  max-width: 35%;
+  position: relative;
+  background: url(<path-to-image>), lightgray 50%/cover no-repeat;
+  margin-left: 20px;
+}
+.card__content-sub {
+  display: flex;
+}
+.card__content-one {
+  position: absolute;
+  top: 75%;
+  left: 3%;
+  max-width: 343px;
+  border-radius: 5px;
+  background: #2468FF;
+  padding: 10px 124px 17px 20px;
+}
+.card__content-two {
+  position: absolute;
+  top: 75%;
+  left: 3%;
+  max-width: 343px;
+  border-radius: 5px;
+  background: #fff;
+  padding: 10px 105px 17px 20px;
+}
+.card__content-thr {
+  position: absolute;
+  top: 75%;
+  left: 3%;
+  max-width: 343px;
+  border-radius: 5px;
+  background: #3FE8BE;
+  padding: 10px 124px 17px 20px;
+}
+.card__content-four {
+  position: absolute;
+  top: 75%;
+  left: 3%;
+  max-width: 343px;
+  border-radius: 5px;
+  background: #C6FF00;
+  padding: 10px 90px 17px 20px;
+}
+.card__content-five {
+  position: absolute;
+  top: 75%;
+  left: 3%;
+  max-width: 343px;
+  border-radius: 5px;
+  background: gray;
+  padding: 10px 100px 17px 20px;
+}
+.card__title-one {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: aliceblue;
+}
+.card__category-one {
+  font-family: Space Grotesk;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: aliceblue;
+  margin-top: 13px;
+}
+.card__title-two {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: #121212;
+}
+.card__category-two {
+  font-family: Space Grotesk;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: #484848;
+  margin-top: 13px;
+}
+.card__title-thr {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: #121212;
+}
+.card__category-thr {
+  font-family: Space Grotesk;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: #484848;
+  margin-top: 13px;
+}
+.card__title-four {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: #121212;
+}
+.card__category-four {
+  font-family: Space Grotesk;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: #484848;
+  margin-top: 13px;
+}
+.card__title-five {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: #121212;
+}
+.card__category-five {
+  font-family: Space Grotesk;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: #484848;
+  margin-top: 13px;
+}
+
+.get {
+  margin-top: 87px;
+}
+.get__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 122px;
+}
+.get__title-left {
+  font-family: Arial;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  color: #2468FF;
+}
+.get__title-right {
+  font-family: Arial;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  color: #C6FF00;
+  padding: 10px;
+}
+.get__title-sub {
+  max-width: 527px;
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba(36, 104, 255, 0.5);
+  display: flex;
+  align-items: center;
+  margin-top: 63px;
+  margin-left: 20px;
+}
+.get__title-sub-1 {
+  max-width: 527px;
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba(36, 104, 255, 0.5);
+  display: flex;
+  align-items: center;
+  margin-top: 27px;
+  margin-left: 20px;
+}
+.get__wrap {
+  margin-top: 40px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.quick__top {
+  margin-top: 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quick__title {
+  font-family: Arial;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  color: #121212;
+  max-width: 813px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #121212;
+}
+.quick__sub-title {
+  margin-top: 33px;
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  color: #5E5E5E;
+  max-width: 558px;
+}
+.quick__card {
+  border-radius: 5px;
+  background: #FAFAFA;
+  width: 393px;
+}
+.quick__card-title {
+  font-family: Arial;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  color: #121212;
+  padding: 49px 100px 0px 30px;
+}
+.quick__card-title-sub {
+  max-width: 180px;
+  margin-top: 16px;
+  font-family: Arial;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  color: #5E5E5E;
+  padding: 0px 159px 64px 30px;
+}
+.quick__card-img {
+  padding: 0px 50px 50px 208px;
+}
+.quick__content {
+  display: flex;
+  margin-top: 70px;
+  margin-left: -20px;
+  gap: 20px;
+}
+
+.gaut {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gaut__content {
+  display: flex;
+  gap: 70px;
+}
+.gaut__left {
+  margin-top: 45px;
+}
+.gaut__about {
+  max-width: 694px;
+  font-family: Space Grotesk;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  color: #121212;
+}
+.gaut__right {
+  row-gap: 5px;
+}
+.gaut__title {
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin-top: 65px;
+  color: #121212;
+}
+.gaut__sub-title {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  color: #5E5E5E;
+  margin-top: 5px;
+}
+
+.creative {
+  margin-top: 200px;
+}
+.creative__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  color: #121212;
+}
+.creative__title-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  color: #121212;
+  gap: 15px 18px;
+}
+.creative__title-bottom span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  color: #2468FF;
+  margin-right: 38px;
+}
+.creative__sub-title {
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 33px;
+}
+.creative__cards {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.creative__card {
+  border-radius: 5px;
+  background: #F5F5F5;
+  max-width: 600px;
+  padding: 30px 1px 20px 30px;
+}
+.creative__card-title {
+  font-family: Arial;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43px;
+  max-width: 233px;
+  color: #121212;
+}
+.creative__card-sub-title {
+  margin-top: 20px;
+  font-family: Space Grotesk;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  max-width: 243px;
+  color: #5E5E5E;
+}
+.creative__card-img {
+  margin: 70px 20px 52px 200px;
+}
+.creative__card-icon {
+  margin-bottom: 20px;
+  margin-left: 400px;
+}
+
+.build__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 115px;
+}
+.build__title {
+  font-family: Arial;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  text-align: center;
+  max-width: 697px;
+  display: flex;
+  align-items: center;
+}
+.build__abs {
+  margin-top: 115px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.build__link {
+  background: gray;
+  max-width: 187px;
+  padding: 13px 30px;
+  border-radius: 500px;
+  background: #191919;
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+  text-align: center;
+}
+.build__img {
+  max-width: 1024px;
+  margin-top: 130px;
+}
+
+.lauren {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lauren__content {
+  display: flex;
+  gap: 70px;
+}
+.lauren__left {
+  margin-top: 15px;
+}
+.lauren__about {
+  max-width: 694px;
+  font-family: Space Grotesk;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  color: #121212;
+}
+.lauren__right {
+  row-gap: 5px;
+}
+.lauren__title {
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin-top: 65px;
+  color: #121212;
+}
+.lauren__sub-title {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  color: #5E5E5E;
+  margin-top: 5px;
+}
+
+.select {
+  margin-top: 150px;
+  padding-top: 47px;
+  padding-bottom: 100px;
+  background: #F5F5F5;
+}
+.select__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.select__title {
+  font-family: Arial;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  max-width: 458px;
+  color: #121212;
+}
+.select__content {
+  margin-top: 63px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.what {
+  margin-top: 97px;
+}
+.what__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  color: #121212;
+}
+.what__sub-title {
+  margin-top: 33px;
+  display: flex;
+  justify-content: center;
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  color: #5E5E5E;
+  text-align: center;
+}
+.what__content {
+  margin-top: 101px;
+  margin-bottom: 37px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 63px;
+}
+.what__text-title {
+  font-family: Arial;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  color: #121212;
+}
+.what__text-sub-title {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #5E5E5E;
+  max-width: 366px;
+}
+
+.aurelien {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aurelien__content {
+  display: flex;
+  gap: 70px;
+}
+.aurelien__left {
+  margin-top: 15px;
+}
+.aurelien__about {
+  max-width: 694px;
+  font-family: Space Grotesk;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  color: #121212;
+}
+.aurelien__right {
+  row-gap: 5px;
+}
+.aurelien__title {
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin-top: 65px;
+  color: #121212;
+}
+.aurelien__sub-title {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  color: #5E5E5E;
+  margin-top: 5px;
+}
+.aurelien__bot {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.dev {
+  margin-top: 190px;
+}
+.dev__content {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-left: 30px;
+}
+.dev__word {
+  font-family: Space Grotesk;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  color: #121212;
+}
+
+.scale__content {
+  margin-top: 53px;
+  margin-bottom: 100px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  border-radius: 5px;
+  background: #2468FF;
+}
+.scale__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Arial;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 51px;
+  color: #fff;
+  row-gap: 23px;
+}
+.scale__sub-title {
+  margin-top: 33px;
+  color: rgba(235, 234, 234, 0.8196078431);
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+}
+.scale__bot {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+.scale__left-bot {
+  border-radius: 5px;
+  border: 2px solid #121212;
+  background: #121212;
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #fff;
+  padding: 12px 57px;
+}
+.scale__right-bot {
+  border-radius: 5px;
+  border: 2px solid #121212;
+  background: #FFF;
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #121212;
+  padding: 12px 98px;
+}
+
+.foot {
+  background: #121212;
+  padding-top: 47px;
+  padding-bottom: 51px;
+}
+.foot__title {
+  font-family: Arial;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  color: #fff;
+}
+.foot__content {
+  display: flex;
+  justify-content: space-between;
+}
+.foot__left-bot {
+  margin-top: 145px;
+  padding: 11px 29px;
+  border-radius: 5px;
+  border: 2px solid #FFF;
+  background: #FFF;
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #121212;
+}
+.foot__right {
+  margin-top: 72px;
+  margin-bottom: 103px;
+  display: flex;
+  font-family: Arial;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #fff;
+  gap: 145px;
+}
+.foot__right-left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+.foot__right-center {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+.foot__right-right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+.foot__abs {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Space Grotesk;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}/*# sourceMappingURL=index.css.map */

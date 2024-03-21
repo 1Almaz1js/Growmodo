@@ -1,0 +1,56 @@
+.scale {
+
+    &__content {
+        margin-top: 53px;
+        margin-bottom: 100px;
+        padding-bottom: 80px;
+        padding-top: 80px;
+        border-radius: 5px;
+        background: #2468FF;
+
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        @include arial(48px, 400, 51px);
+        color: #fff;
+        row-gap: 23px;
+    }
+
+    &__sub-title {
+        margin-top: 33px;
+
+        color: #ebeaead1;
+        @include space(20px, 400, 27px);
+        text-align: center;
+    }
+
+    &__bot {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 40px;
+
+    }
+
+    &__left-bot {
+        border-radius: 5px;
+        border: 2px solid #121212;
+        background: #121212;
+        @include space(20px, 400, 26px);
+        color: $btn;
+        padding: 12px 57px;
+    }
+
+    &__right-bot {
+        border-radius: 5px;
+        border: 2px solid #121212;
+        background: #FFF;
+        @include space(20px, 400, 26px);
+        color: $text;
+        padding: 12px 98px;
+    }
+}

@@ -1,0 +1,29 @@
+@mixin space ($size, $weight, $h) {
+    font-family: Space Grotesk;
+    font-size: $size;
+    font-style: normal;
+    font-weight: $weight;
+    line-height: $h;
+}
+
+@mixin arial ($size, $weight, $h) {
+    font-family: Arial;
+    font-size: $size;
+    font-style: normal;
+    font-weight: $weight;
+    line-height: $h;
+}
+
+@mixin lato ($size, $weight, $h) {
+    font-family: lato;
+    font-size: $size;
+    font-style: normal;
+    font-weight: $weight;
+    line-height: $h;
+}
+
+@mixin dis () {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

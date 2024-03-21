@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__content {
+        @include dis;
+        margin: 25px 35px;
+        padding: 4px;
+        gap: 45px;
+        background: #fff;
+        box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.07);
+    }   
+    &__links{
+        @include dis;
+        margin: 25px 35px;
+        // padding: 34px;
+        gap: 54px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        @include space (17px, 400, 22px);
+        color: #121212;
+        gap: 9px;
+        // margin-left: 37px;
+
+    }
+
+    &__bot {
+        border-radius: 5px;
+        border: 2px solid #121212;
+        background: #121212;
+
+        padding: 11px 29px 13px 29px;
+        margin: 23px;
+        display: flex;
+        align-items: center;
+        @include space (18px, 400, 22px);
+        color: #fff;
+    }
+}

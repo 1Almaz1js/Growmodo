@@ -1,0 +1,46 @@
+.aurelien {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        gap: 70px;
+
+    }
+
+    &__left {
+        margin-top: 15px;
+    }
+
+    &__about {
+        max-width: 694px;
+        @include space(34px, 400, 38px);
+        color: $text;
+    }
+
+    &__right {
+        row-gap: 5px;
+    }
+
+    &__title {
+        @include space(20px, 400, 27px);
+        margin-top: 65px;
+        color: $text;
+    }
+
+    &__sub-title {
+        @include space(18px, 400, 23px);
+        color: $sub;
+        margin-top: 5px;
+    }
+
+    &__bot {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        @include space(20px, 400, 27px);
+
+    }
+}

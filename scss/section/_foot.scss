@@ -1,0 +1,60 @@
+.foot {
+    background: $text;
+    padding-top: 47px;
+    padding-bottom: 51px;
+
+    &__title {
+        @include arial(58px, 400, 64px);
+        color: $btn;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left-bot {
+        margin-top: 145px;
+        padding: 11px 29px;
+        border-radius: 5px;
+        border: 2px solid #FFF;
+        background: #FFF;
+        @include space(20px, 400, 24px);
+        text-align: center;
+        color: $text;
+    }
+
+    &__right {
+        margin-top: 72px;
+        margin-bottom: 103px;
+        display: flex;
+        @include arial (18px, 400, 21px);
+        color: $btn;
+        gap: 145px;
+    }
+
+    &__right-left {
+        display: flex;
+        flex-direction: column;
+        row-gap: 23px;
+    }
+
+    &__right-center {
+        display: flex;
+        flex-direction: column;
+        row-gap: 23px;
+    }
+
+    &__right-right {
+        display: flex;
+        flex-direction: column;
+        row-gap: 23px;
+    }
+&__abs{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.50);
+    @include space(15px, 400, 20px);
+
+}
+}

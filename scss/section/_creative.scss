@@ -1,0 +1,71 @@
+.creative {
+    margin-top: 200px;
+
+    &__title {
+        @include dis();
+        text-align: center;
+        @include arial(58px, 400, 64px);
+        color: $text;
+    }
+
+    &__title-bottom {
+        @include dis();
+        text-align: center;
+        @include arial(58px, 400, 64px);
+        color: $text;
+        gap: 15px 18px;
+    }
+
+    &__title-bottom span {
+        @include dis();
+        text-align: center;
+        @include arial(58px, 400, 64px);
+        color: #2468FF;
+        margin-right: 38px;
+    }
+
+    &__sub-title {
+        @include space(20px, 400, 27px);
+        @include dis();
+        text-align: center;
+        margin-top: 33px;
+
+    }
+
+    &__cards {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__card {
+        border-radius: 5px;
+        background: #F5F5F5;
+        max-width: 600px;
+        padding: 30px 1px 20px 30px;
+
+        &-title {
+            @include arial(37px, 400, 43px);
+            max-width: 233px;
+            color: $text;
+        }
+
+        &-sub-title {
+            margin-top: 20px;
+            @include space(21px, 400, 27px);
+            max-width: 243px;
+            color: $sub;
+        }
+
+        &-img {
+            margin: 70px 20px 52px 200px;
+        }
+
+        &-icon {
+            margin-bottom: 20px;
+            margin-left: 400px;
+        }
+    }
+
+}

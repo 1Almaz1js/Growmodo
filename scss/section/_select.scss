@@ -1,0 +1,23 @@
+.select {
+    margin-top: 150px;
+    padding-top: 47px;
+    padding-bottom: 100px;
+    background: #F5F5F5;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__title {
+        @include arial(52px, 400, 64px);
+        max-width: 458px;
+        color: $text;
+    }
+    &__content{
+        margin-top: 63px;
+        display: flex;
+        justify-content: center ;
+        gap: 100px;
+    }
+}

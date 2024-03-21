@@ -1,0 +1,19 @@
+.dev {
+    margin-top: 190px;
+
+    &__content {
+        border-bottom:  1px solid #000;
+        border-top: 1px solid #000;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        margin-left: 30px;
+    }
+
+    &__word {
+        @include space(25px, 400, 36px);
+        color: $text;
+    }
+}
